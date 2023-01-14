@@ -1,10 +1,9 @@
 #include<stdio.h>
 int main()
 {
-    int age = 0;
-    age = 37.2;
-    printf("%u" , age);
-
+     unsigned char j = 255;
+ j = j + 10;
+ printf("%u", j); /* 9 */
 
     return 0;
 }
