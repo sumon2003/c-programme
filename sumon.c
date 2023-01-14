@@ -1,7 +1,9 @@
 #include<stdio.h>
 int main()
 {
-    printf("Hello world! Iam Sumon.");
+    int age = 0;
+    age = 37.2;
+    printf("%u" , age);
 
 
     return 0;
