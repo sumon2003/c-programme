@@ -13,6 +13,11 @@ int main()
      myOtherNum = myNum;
 
      printf("My favourite number is:%d\n", myOtherNum);
+
+     int x, y, z;
+     x = y = z = 50;
+     
+     printf("%d", x + y + z);
      
     
 
