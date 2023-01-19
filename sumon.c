@@ -8,13 +8,13 @@ int main()
      printf("This is my first programme.\n"); //This is a comment.
      printf("C programming is very easy.\tI love it to learn.\n");
      printf("They call him \"Sumon\"");*/
-     int myNum = 15;
-     float MyFloatNum = 19.99;
-     char MyLetter = 'S';
+     int myNum = 1000;
+     int myOtherNum;
+     myOtherNum = myNum;
 
-     printf("%d\n", myNum);
-     printf("%f\n", MyFloatNum);
-     printf("%c\n", MyLetter);
+     printf("My favourite number is:%d\n", myOtherNum);
+     
+    
 
     return 0;
 }
