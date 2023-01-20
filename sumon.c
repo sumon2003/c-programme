@@ -55,6 +55,17 @@ int main()
     int sum = 100 * 50;
     printf("%d\n", sum);
 
+    int num1 = 100 + 50;
+    int num2 = num1 + 250;
+    int num3 = num1 + num2;
+
+    printf("%d\n", num1);
+    printf("%d\n", num2);
+    printf("%d\n", num3);
+
+    int x = 55;
+    printf("%d\n", --x);
+
 
      return 0;
 }
