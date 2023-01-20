@@ -39,13 +39,22 @@ int main()
      printf("%d\n", sum);
     
     float sum = (float) 5 / 2;
-    printf("%f\n", sum);*/
+    printf("%f\n", sum);
 
     int num1 = 5;
     int num2 = 3;
     float sum = (float) num1 / num2;
 
-    printf("%.2f\n", sum);
+    printf("%.2f\n", sum);*/
+
+    const int myNum = 15;
+    const float my = 1.0;
+    printf("%d\n", myNum);
+    printf("%f\n", my);
+
+    int sum = 100 * 50;
+    printf("%d\n", sum);
+
 
      return 0;
 }
