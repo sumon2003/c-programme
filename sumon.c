@@ -66,6 +66,21 @@ int main()
     int x = 55;
     printf("%d\n", --x);
 
+    int y = 50;
+    y -= 5;
+    printf("%d\n", y);
+
+    int myInt;
+    float myFloat;
+    double myDouble;
+    char myChar;
+
+    printf("%lu\n", sizeof(myInt));
+     printf("%lu\n", sizeof(myFloat));
+      printf("%lu\n", sizeof(myDouble));
+       printf("%lu\n", sizeof(myChar));
+        
+
 
      return 0;
 }
