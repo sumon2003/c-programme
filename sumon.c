@@ -30,16 +30,22 @@ int main()
      printf("%f\n", myFloat);
      printf("%.1f\n", myFloat);
      printf("%.2f\n", myFloat);
-     printf("%.4f\n", myFloat); */
+     printf("%.4f\n", myFloat); 
 
      int x = 5;
      int y = 2;
      int sum = 5 / 2;
 
      printf("%d\n", sum);
+    
+    float sum = (float) 5 / 2;
+    printf("%f\n", sum);*/
 
+    int num1 = 5;
+    int num2 = 3;
+    float sum = (float) num1 / num2;
 
-     
+    printf("%.2f\n", sum);
 
-    return 0;
+     return 0;
 }
