@@ -100,9 +100,14 @@ int main()
     bool ice = false;
     printf("%d\n", water == ice);
 
-    int myAge = 25;
+    int myAge = 18;
     int votingage = 18;
-    printf("%d\n", myAge >= votingage);
+    
+    if(myAge >= votingage) {
+      printf("Old enough to vote.\n");
+    } else {
+      printf("Not old enough to vote.\n");
+    }
         
 
 
