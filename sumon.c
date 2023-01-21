@@ -124,9 +124,20 @@ int main()
 
     int time = 20;
     if(time > 44){
-      printf("Good Day.");
+      printf("Good Day.\n");
+    } else if(time < 18){
+      printf("Good Evening.\n");
     } else {
-      printf("Good Night.");
+      printf("Good Night.\n");
+    }
+
+    int mynumber = 0;
+    if(mynumber > 0){
+      printf("This is a positive number.\n");
+    } else if(mynumber < 0){
+      printf("this is a neagative number.\n");
+    } else {
+      printf("This is 0.\n");
     }
 
      return 0;
