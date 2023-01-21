@@ -109,7 +109,25 @@ int main()
       printf("Not old enough to vote.\n");
     }
         
+    if(29 > 18){
+      printf("This is Sumon.\n");
+    } else {
+      printf("This is comuter.\n");
+    }
 
+    int p = 20;
+    int q = 18;
+
+    if(p > q){
+      printf("20 is greater than q.\n");
+    }
+
+    int time = 20;
+    if(time > 44){
+      printf("Good Day.");
+    } else {
+      printf("Good Night.");
+    }
 
      return 0;
 }
