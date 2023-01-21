@@ -95,6 +95,14 @@ int main()
     int y = 15;
     printf("%d\n", x > y);
     printf("%d\n", x < y);
+
+    bool water = false;
+    bool ice = false;
+    printf("%d\n", water == ice);
+
+    int myAge = 25;
+    int votingage = 18;
+    printf("%d\n", myAge >= votingage);
         
 
 
