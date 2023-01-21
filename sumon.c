@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<stdbool.h>
 int main()
 {
     //This is  a single comment.
@@ -76,9 +77,16 @@ int main()
     char myChar;
 
     printf("%lu\n", sizeof(myInt));
-     printf("%lu\n", sizeof(myFloat));
-      printf("%lu\n", sizeof(myDouble));
-       printf("%lu\n", sizeof(myChar));
+    printf("%lu\n", sizeof(myFloat));
+    printf("%lu\n", sizeof(myDouble));
+    printf("%lu\n", sizeof(myChar));
+
+    bool sumon = true;
+    bool nomus = false;
+
+    printf("%d\n", sumon);
+    printf("%d\n", nomus);
+    printf("%d\n", 10 > 9);
         
 
 
