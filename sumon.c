@@ -87,6 +87,9 @@ int main()
     printf("%d\n", sumon);
     printf("%d\n", nomus);
     printf("%d\n", 10 > 9);
+    printf("%d\n", 15 == 15);
+    printf("%d\n", 15 == 55);
+    printf("%d\n", 55 == 22);
 
     int x = 5;
     int y = 15;
