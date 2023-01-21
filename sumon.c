@@ -64,12 +64,12 @@ int main()
     printf("%d\n", num2);
     printf("%d\n", num3);
 
-    int x = 55;
+   /* int x = 55;
     printf("%d\n", --x);
 
     int y = 50;
     y -= 5;
-    printf("%d\n", y);
+    printf("%d\n", y); */
 
     int myInt;
     float myFloat;
@@ -87,6 +87,11 @@ int main()
     printf("%d\n", sumon);
     printf("%d\n", nomus);
     printf("%d\n", 10 > 9);
+
+    int x = 5;
+    int y = 15;
+    printf("%d\n", x > y);
+    printf("%d\n", x < y);
         
 
 
