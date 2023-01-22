@@ -201,10 +201,23 @@ int main()
       int d;
       for(d = 1; d <= 10; d++){
         if(d == 6){
-          break;
+          continue;
         }
         printf("%d\n", d);
       }
+
+      //Break and Continue in while loop
+
+      int e = 0;
+      while(e < 10){
+        if(e == 5){
+          break;
+        }
+        printf("%d\n", e);
+        e++;
+      }
+
+      
 
     
      return 0;
