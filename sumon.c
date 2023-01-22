@@ -164,10 +164,17 @@ int main()
       printf("Looking forward to the weekend.\n");
     }
 
-    int i = 0;
+   /* int i = 0;
     while(i < 5){
       printf("%d\n", i);
-      i++;
-    }
+      i++;*/
+
+      int i = 20;
+      do{
+        printf("%d\n", i);
+        i--;
+      }
+      while(i > 5);
+    
      return 0;
 }
