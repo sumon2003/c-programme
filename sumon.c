@@ -217,6 +217,16 @@ int main()
         e++;
       }
 
+      int f = 0;
+      while(f < 10){
+        if(f == 5){
+          f++;
+          continue;
+        }
+        printf("%d\n", f);
+        f++;
+      }
+
       
 
     
