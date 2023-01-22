@@ -160,8 +160,14 @@ int main()
       case 6:
       printf("Sunday\n");
       break;
-      case 7:
-      printf("Thursday\n");
+      default:
+      printf("Looking forward to the weekend.\n");
+    }
+
+    int i = 0;
+    while(i < 5){
+      printf("%d\n", i);
+      i++;
     }
      return 0;
 }
