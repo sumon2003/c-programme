@@ -175,6 +175,29 @@ int main()
         i--;
       }
       while(i > 5);
+
+      int s;
+      for(s = 0; s < 5; s++ ){
+        printf("%d\n", s);
+      }
+
+      int a;
+      for(a = 0; a <= 10; a = a + 2){
+        printf("%d\n", a);
+      }
+
+      //Nested Loop
+
+      int b, c;
+      //Outer Loop
+      for(b = 1; b <= 5; ++b){
+        printf("Outer:%d\n", b);
+      //Inner Loop
+      for(c = 1; c <= 3; ++c){
+        printf(" Inner:%d\n", c);
+      }  
+      }
+
     
      return 0;
 }
