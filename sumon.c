@@ -198,6 +198,14 @@ int main()
       }  
       }
 
+      int d;
+      for(d = 1; d <= 10; d++){
+        if(d == 6){
+          break;
+        }
+        printf("%d\n", d);
+      }
+
     
      return 0;
 }
