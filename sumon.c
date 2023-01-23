@@ -227,7 +227,12 @@ int main()
         f++;
       }
 
-      
+      int type[] = {20, 25, 30, 35, 40};
+      printf("%d\n", type[0]);
+
+      int type1[] = {20, 25, 30, 40};
+       type1[0] = 100;
+      printf("%d\n", type1[1]);
 
     
      return 0;
