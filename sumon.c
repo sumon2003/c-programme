@@ -265,6 +265,17 @@ int main()
       char Greetings[] = "Hello World";
       Greetings[0] = 'J';
       printf("%s\n", Greetings);
+
+      char carname[] = "Volvo";
+      int m;
+      for(m = 0; m < 5; ++m){
+        printf("%c\n", carname[m]);
+      }
+
+      char sumons[] = {'H', 'e', 'l', 'l', 'o', 'W', 'o', 'r', 'l', 'd', '!', '\0'};
+      char Sumon[] = "Hello World!";
+      printf("%s\n", sumons);
+      printf("%s\n", Sumon);
     
      return 0;
 }
