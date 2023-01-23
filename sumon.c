@@ -234,6 +234,12 @@ int main()
        type1[0] = 100;
       printf("%d\n", type1[1]);
 
+      int type2[] = {20, 25, 30, 40, 50};
+      int g;
+      for(g = 0; g < 4; g++){
+        printf("%d\n", type2[g]);
+      }
+
     
      return 0;
 }
