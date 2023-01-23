@@ -257,6 +257,14 @@ int main()
           printf("%d\n", Matrix[k][l]);
         }
       }
+
+      char greetings[] = "Hello World!";
+      printf("%s\n", greetings);
+      printf("%c\n", greetings[0]);
+
+      char Greetings[] = "Hello World";
+      Greetings[0] = 'J';
+      printf("%s\n", Greetings);
     
      return 0;
 }
