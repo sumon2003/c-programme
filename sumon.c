@@ -246,6 +246,9 @@ int main()
       type3[2] = 35;
       type3[3] = 40;
       printf("%d\n", type3[3]);
+
+      int matrix[2][3] = { {10, 20, 30}, {40, 50, 60} };
+      printf("%d\n", matrix[1][1]);
     
      return 0;
 }
