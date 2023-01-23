@@ -240,6 +240,12 @@ int main()
         printf("%d\n", type2[g]);
       }
 
+      int type3[4];
+      type3[0] = 20;
+      type3[1] = 30;
+      type3[2] = 35;
+      type3[3] = 40;
+      printf("%d\n", type3[3]);
     
      return 0;
 }
