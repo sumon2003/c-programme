@@ -249,6 +249,14 @@ int main()
 
       int matrix[2][3] = { {10, 20, 30}, {40, 50, 60} };
       printf("%d\n", matrix[1][1]);
+
+      int Matrix[3][5] = {{10, 20, 30, 15, 25}, {40, 50, 60, 45, 55}, {70, 80, 90, 75, 85,}};
+      int k, l;
+      for(k = 0; k < 3; k++){
+        for(l = 0; l < 5; l++){
+          printf("%d\n", Matrix[k][l]);
+        }
+      }
     
      return 0;
 }
