@@ -1,5 +1,6 @@
 #include<stdio.h>
 #include<stdbool.h>
+#include<string.h>
 int main()
 {
     //This is  a single comment.
@@ -286,7 +287,11 @@ int main()
       char txT[] = "The charecter \\ is called backslash.";
       printf("%s\n", txT);
 
-      
+      char alphabet[50] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+      printf("%d\n", strlen(alphabet));
+      printf("%d\n", sizeof(alphabet));
+
+
     
      return 0;
 }
