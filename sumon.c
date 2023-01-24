@@ -276,6 +276,17 @@ int main()
       char Sumon[] = "Hello World!";
       printf("%s\n", sumons);
       printf("%s\n", Sumon);
+
+      char txt[] = "We are the so-called \"Vikings\" from the north.";
+      printf("%s\n", txt);
+
+      char Txt[] = "It\'s beautiful.";
+      printf("%s\n", Txt);
+
+      char txT[] = "The charecter \\ is called backslash.";
+      printf("%s\n", txT);
+
+      
     
      return 0;
 }
