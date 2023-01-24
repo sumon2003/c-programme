@@ -296,8 +296,16 @@ int main()
       // Concatenate str2 to str1 (the result is stored in str1)
       strcat(str1, str2);
       // Print str1
-      printf("%s", str1);
+      printf("%s\n", str1);
 
+      char str3[20] = "Hello World!";
+      char str4[20];
+      //Copy str3 to str4
+      strcpy(str4, str3);
+      //Print str4
+      printf("%s\n", str4);
+
+      
 
     
      return 0;
