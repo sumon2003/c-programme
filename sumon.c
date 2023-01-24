@@ -305,6 +305,14 @@ int main()
       //Print str4
       printf("%s\n", str4);
 
+      char str5[] = "Hello";
+      char str6[] = "Hello";
+      char str7[] = "Hi";
+      // Compare str5 and str6, and print the result
+      printf("%d\n", strcmp(str5, str6));
+      
+      // Compare str5 and str7, and print the result
+      printf("%d\n", strcmp(str5, str7));
       
 
     
