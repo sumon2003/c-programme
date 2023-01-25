@@ -313,7 +313,7 @@ int main()
       
       // Compare str5 and str7, and print the result
       printf("%d\n", strcmp(str5, str7));
-      
+      /*
       // Chapter Name : User Input
       // cree an integer variable that will store the number we get from the user
       int myNumber;
@@ -355,7 +355,21 @@ int main()
       scanf("%s,", firstName);
 
       // Output the text
-      printf("Hello %s\n", firstName);
+      printf("Hello %s\n", firstName); */
+
+      // How to input full name
+      // Create a string
+      char fullName[30];
+
+      // Ask the user to input some text (full name)
+      printf("Type your full name and press enter: \n");
+
+      // Get the text
+      fgets(fullName, sizeof(fullName), stdin);
+
+      //Output the text
+      printf("Hello %s", fullName);
+
 
     
      return 0;
