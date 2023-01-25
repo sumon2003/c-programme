@@ -314,6 +314,18 @@ int main()
       // Compare str5 and str7, and print the result
       printf("%d\n", strcmp(str5, str7));
       
+      // Chapter Name : User Input
+      // cree an integer variable that will store the number we get from the user
+      int myNumber;
+
+      // Ask the user to type a number
+      printf("Type a number and press enter: \n");
+
+      // Get and save the number the user types
+      scanf("%d", &myNumber);
+
+      // Print the number the user typed
+      printf("Your number is: %d", myNumber);
 
     
      return 0;
