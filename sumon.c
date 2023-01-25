@@ -370,6 +370,10 @@ int main()
       //Output the text
       printf("Hello %s", fullName);
 
+      // C Memory Address
+      int MyAge = 19;
+      printf("%p\n", &MyAge);
+
 
     
      return 0;
