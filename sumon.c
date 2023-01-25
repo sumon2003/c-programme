@@ -325,7 +325,24 @@ int main()
       scanf("%d", &myNumber);
 
       // Print the number the user typed
-      printf("Your number is: %d", myNumber);
+      printf("Your number is: %d\n", myNumber);
+
+      // Name: Multiple Inputs
+      // Create a integer and a character variable
+      int number;
+      char character;
+
+      // Ask the user to type a number and a character
+      printf("Type a number and a character and press enter: \n");
+
+      // Get and save the number the user types
+      scanf("%d %c", &number, &character);
+
+      //Print the number
+      printf("Your number is: %d\n", number);
+
+      //Print the character
+      printf("Your character is: %c\n", character);
 
     
      return 0;
