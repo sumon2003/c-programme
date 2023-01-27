@@ -374,9 +374,13 @@ int main()
       int MyAge = 19;
       printf("%p\n", &MyAge);
 
+     // Creating Pointer
+      
       int roll = 72;
-      printf("%d\n", roll);
-      printf("%p\n", &roll);
+      int* ptr = &roll; // A pointer variable, with the name ptr, that stores the address of Roll.
+      printf("%d\n", roll); // Output the value of Roll
+      printf("%p\n", &roll); // Output the memory address of Roll
+      printf("%p\n", ptr); // Output the memory address of Roll with the pointer
 
 
     
