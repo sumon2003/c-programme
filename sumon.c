@@ -381,6 +381,7 @@ int main()
       printf("%d\n", roll); // Output the value of Roll
       printf("%p\n", &roll); // Output the memory address of Roll
       printf("%p\n", ptr); // Output the memory address of Roll with the pointer
+      printf("%d\n", *ptr); // Output the value of Roll with the pointer
 
 
     
