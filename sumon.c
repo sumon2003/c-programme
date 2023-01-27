@@ -374,6 +374,10 @@ int main()
       int MyAge = 19;
       printf("%p\n", &MyAge);
 
+      int roll = 72;
+      printf("%d\n", roll);
+      printf("%p\n", &roll);
+
 
     
      return 0;
