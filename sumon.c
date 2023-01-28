@@ -383,6 +383,18 @@ int main()
       printf("%p\n", ptr); // Output the memory address of Roll with the pointer
       printf("%d\n", *ptr); // Output the value of Roll with the pointer
 
+    // C pointers and arrays
+      int rollnumber[4] = {25, 50, 75, 100};
+      int n;
+
+      for(n = 0; n < 4; n++){
+        printf("%p\n", &rollnumber[n]);
+      }
+
+      int rollNumber[5] = {10, 15, 20, 25, 30};
+      // Get the size of rollNumber Array.
+      printf("%lu\n", sizeof(rollNumber));
+
 
     
      return 0;
