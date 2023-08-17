@@ -1,13 +1,11 @@
 #include<stdio.h> 
 #include<math.h>
 int main(){
-	double x, result;
-	printf("Enter your number: ");
-	scanf("%lf", &x);
-	result = floor(x);
-	printf("The result of round = %lf", result);
-	
-
+	float x, y,hours;
+	printf("Enter your value: ");
+	scanf("%f %f",&x,&y);
+	hours = abs(y-x);
+	printf("The working hours of Chef is %.2f",hours); 
 
 return 0;
 }
