@@ -1,10 +1,13 @@
 #include<stdio.h> 
 #include<math.h>
 int main(){
-	double X;
-	printf("Enter your number: ");
-	scanf("%lf", &X);
-	X = sqrt(X);
-	printf("The square root value of X is = %.2lf\n", X);
+	int x,y, Power;
+	printf("Enter X = ");
+	scanf("%d",&x);
+	printf("Enter Y = ");
+	scanf("%d",&y);
+	Power = pow(x,y);
+	printf("The power is = %d",Power);
+
 return 0;
 }
