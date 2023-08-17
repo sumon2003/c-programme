@@ -4,7 +4,7 @@ int main(){
 	double x, result;
 	printf("Enter your number: ");
 	scanf("%lf", &x);
-	result = log(x);
+	result = log10(x);
 	printf("The result of log = %lf", result);
 	
 
