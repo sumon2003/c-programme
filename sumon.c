@@ -4,8 +4,8 @@ int main(){
 	double x, result;
 	printf("Enter your number: ");
 	scanf("%lf", &x);
-	result = sin(x);
-	printf("The result of sine = %lf", result);
+	result = round(x);
+	printf("The result of round = %lf", result);
 	
 
 
