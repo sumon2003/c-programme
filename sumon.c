@@ -1,10 +1,10 @@
 #include<stdio.h> 
 #include<math.h>
 int main(){
-	int A;
-	printf("Enter a number to show these absolute value: ");
-	scanf("%d",&A);
-	A = abs(A);
-	printf("The absolute value of A is = %d\n", A);
+	double X;
+	printf("Enter your number: ");
+	scanf("%lf", &X);
+	X = sqrt(X);
+	printf("The square root value of X is = %.2lf\n", X);
 return 0;
 }
