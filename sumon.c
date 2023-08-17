@@ -1,11 +1,13 @@
-#include<stdio.h> //a = 36.25 b = 43.5 c = 25.5 
+#include<stdio.h> 
 #include<math.h>
 int main(){
-	double a, b, c, s, area;
-	printf("Enter 3 numbers: ");
-	scanf("%lf%lf%lf",&a,&b,&c);
-	s = (a+b+c)/2;
-	area = sqrt(s*(s-a)*(s-b)*(s-c));
-	printf("The area of tringle is: %lf\n", area);
+	int A = 50;
+	int B = 100;
+	int temp;
+	temp = A;
+	A = B;
+	B = temp;
+	printf("A and B value are: %d %d\n", A, B);
+	
 return 0;
 }
