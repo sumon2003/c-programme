@@ -1,17 +1,34 @@
-#include<stdio.h> 
+#include<stdio.h>
 #include<math.h>
 int main(){
-	int num1, num2, num3;
-	printf("Enter three number: ");
-	scanf("%d %d %d", &num1, &num2, &num3);
-	if(num1>num2 && num1>num3)
-	  printf("Large number is: %d", num1);
-	else if(num2>num1 && num2>num3)
-	  printf("Large number is: %d", num2);
-	else if(num3>num1 && num3>num2)
-	  printf("Large number is: %d", num3);
-	else
-	  printf("Numbers are equal");       
+double num1, num2;
+char operator;
 
-return 0;
+printf("Enter an operator(+,-,*,/): ");
+scanf("%c", &operator);
+
+switch(operator)
+{
+	case '+':
+	    printf("Enter two number: ");
+        scanf("%lf %lf", &num1,&num2);
+	    printf("%lf + %lf= %lf",num1,num2,num1+num2);
+		break;
+	case '-':
+	    printf("Enter two number: ");
+        scanf("%lf %lf",&num1,&num2);
+	    printf("%lf - %lf= %lf",num1,num2,num1-num2);
+		break;
+	case '*':
+	    printf("Enter two number: ");
+        scanf("%lf %lf",&num1,&num2);
+	    printf("%lf * %lf= %lf",num1,num2,num1*num2);
+		break;
+	case '/':
+	    printf("Enter two number: ");
+        scanf("%lf %lf",&num1,&num2);
+	    printf("%lf + %lf= %lf",num1,num2,num1*num2);	
+		break;		
+}
+	return 0;
 }
