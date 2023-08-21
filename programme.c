@@ -1,19 +1,12 @@
-#include<stdio.h>
-int main(){
-int num, count=0, i;
-printf("Enter a number: ");
-scanf("%d",&num);
-for(i=2; i<num; i++)
-{
-    if(num%i==0)
-    {
-        count++;
-        break;
-    }
-}
-if(count==0)
-printf("This is a prime number.\n");
-else
-printf("This is not a prime number.");
+#include <stdio.h>
+ 
+int main() {
+ 
+  double R, pi, volume;
+  pi = 3.14159;
+  scanf("%lf",&R);
+  volume = ((4.0/3) * pi * pow(R,3));
+  printf("VOLUME = %.3lf\n", volume);
+ 
     return 0;
 }
