@@ -7,13 +7,13 @@ int num[100],i,n;
     {
         scanf("%d", &num[i]);
     }
-   int max = num[0];
+   int min = num[0];
    for(i=1; i<n; i++)
    {
-      if(max<num[i])
-      max = num[i];
+      if(min>num[i])
+      min = num[i];
    }
-   printf("Maximum = %d\n", max);
+   printf("Minimum = %d\n", min);
 
   return 0;
 }
