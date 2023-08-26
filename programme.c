@@ -1,31 +1,17 @@
 #include<stdio.h> 
 int main() {
-int n, row, col;
-printf("Enter N = ");
-scanf("%d",&n);
-for(row=1; row<=n; row++)
-{
-    for(col=1; col<=n-row; col++)
+int a[100], sum=0,i,n;
+    printf("How many numbers: ");
+    scanf("%d", &n);
+    for(i=0; i<n; i++)
     {
-        printf("      ");
+        scanf("%d", &a[i]);
     }
-    for(col=1; col<=2*row-1; col++)
+    for(i=0; i<n; i++)
     {
-        printf("sumon ");
+        sum = sum + a[i];
     }
-    printf("\n");
-}
-for(row=n-1; row>=1; row--)
-{
-    for(col=1; col<=n-row; col++)
-    {
-        printf("      ");
-    }
-    for(col=1; col<=2*row-1; col++)
-    {
-        printf("sumon ");
-    }
-    printf("\n");
-}
+    printf("The sum is: %d\n", sum);
+    printf("The average is: %.2f\n",(float)sum/n);
   return 0;
 }
