@@ -1,8 +1,8 @@
 #include<stdio.h> 
 int main() {
-float distance;
-float fuel_used;
-scanf("%f %f",&fuel_used,&distance);
-printf("%.3f km/l\n",fuel_used/distance); 
+double x1,y1,x2,y2,distance;
+scanf("%lf %lf %lf %lf",&x1,&y1,&x2,&y2);
+distance = sqrt(pow((x2-x1),2)+ pow((y2-y1),2));
+printf("%.4lf\n", distance); 
   return 0;
 }
