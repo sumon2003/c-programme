@@ -1,8 +1,9 @@
 #include<stdio.h> 
 int main() {
-int total, distance;
-scanf("%d",&distance);
-total = distance*2;
-printf("%d minutos\n", total);
+double spent_time, avg_speed, fuel_spent;
+scanf("%lf %lf", &spent_time, &avg_speed);
+fuel_spent = (avg_speed*spent_time)/12.0;
+printf("%.3lf\n", fuel_spent);
+
  return 0;
 }
