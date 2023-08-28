@@ -1,19 +1,10 @@
 #include<stdio.h> 
 int main() {
-int number[100],i,n;
-    printf("How many numbers: ");
-    scanf("%d", &n);
-    for(i=0; i<n; i++)
-    {
-        scanf("%d", &number[i]);
-    }
-   int min = number[0];
-   for(i=1; i<n; i++)
-   {
-      if(min>number[i])
-      min = number[i];
-   }
-   printf("Minimum = %d\n", min);
+int distance;
+float fuel_used, avg_consumption;
+scanf("%f %d",&fuel_used,&distance);
+avg_consumption = (fuel_used/distance)*100;
+printf("%.3f km/l\n", avg_consumption); 
 
   return 0;
 }
