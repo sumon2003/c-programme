@@ -1,9 +1,10 @@
 #include<stdio.h> 
 int main() {
-int i, arr[100], n;
+int i,n;
 printf("Enter N = ");
 scanf("%d", &n);
 printf("Enter your numbers: ");
+int arr[n];
 for(i=0; i<n; i++){
     scanf("%d", &arr[i]);
 }
