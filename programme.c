@@ -1,9 +1,11 @@
 #include<stdio.h> 
 int main() {
-double spent_time, avg_speed, fuel_spent;
-scanf("%lf %lf", &spent_time, &avg_speed);
-fuel_spent = (avg_speed*spent_time)/12.0;
-printf("%.3lf\n", fuel_spent);
+int i, arr[100], n;
+printf("Enter N = ");
+for(i=0; i<n; i++){
+    scanf("%d", &arr[i]);
+}
+ printf("%d", arr[i]);
 
  return 0;
 }
