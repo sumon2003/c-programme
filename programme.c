@@ -1,12 +1,36 @@
 #include<stdio.h>
-#include<stdlib.h> 
 int main(){
-int a,b,c, max, maximum;
-printf("Enter your value: ");
-scanf("%d%d%d",&a,&b,&c);
-max = ((a+b)+abs(a-b))/2;
-maximum = ((max+c)+abs(max-c))/2;
-printf("%d eh o maior\n", maximum);
+float Tk;    
+int N100,N50,N20,N10,N5,N2,c1,c_50,c_25,c_10,c_05,c_01;
+scanf("%f",&Tk);
+N100=Tk/100;
+N50=(Tk-(N100*100))/50;
+N20=(Tk-((N100*100)+(N50*50)))/20;
+N10=(Tk-((N100*100)+(N50*50)+(N20*20)))/10;
+N5=(Tk-((N100*100)+(N50*50)+(N20*20)+(N10*10)))/5;
+N2=(Tk-((N100*100)+(N50*50)+(N20*20)+(N10*10)+(N5*5)))/2;
+c1=(Tk-((N100*100)+(N50*50)+(N20*20)+(N10*10)+(N5*5)+(N2*2)))/1.00;
+c_50=(Tk-((N100*100)+(N50*50)+(N20*20)+(N10*10)+(N5*5)+(N2*2)+(c1*1.00)))/0.50;
+c_25=(Tk-((N100*100)+(N50*50)+(N20*20)+(N10*10)+(N5*5)+(N2*2)+(c1*1.00)+(c_50*0.50)))/0.25;
+c_10=(Tk-((N100*100)+(N50*50)+(N20*20)+(N10*10)+(N5*5)+(N2*2)+(c1*1.00)+(c_50*0.50)+(c_25*0.25)))/0.10;
+c_05=(Tk-((N100*100)+(N50*50)+(N20*20)+(N10*10)+(N5*5)+(N2*2)+(c1*1.00)+(c_50*0.50)+(c_25*0.25)+(c_10*0.10)))/0.05;
+c_01=(Tk-((N100*100)+(N50*50)+(N20*20)+(N10*10)+(N5*5)+(N2*2)+(c1*1.00)+(c_50*0.50)+(c_25*0.25)+(c_10*0.10)+(c_05*0.05)))/0.01;
+
+printf("NOTAS:\n");
+printf("%d nota(s) de R$ 100.00\n",N100);
+printf("%d nota(s) de R$ 50.00\n",N50);
+printf("%d nota(s) de R$ 20.00\n",N20);
+printf("%d nota(s) de R$ 10.00\n",N10);
+printf("%d nota(s) de R$ 5.00\n",N5);
+printf("%d nota(s) de R$ 2.00\n",N2);
+printf("MOEDAS:\n");
+printf("%d moeda(s) de R$ 1.00\n",c1);
+printf("%d moeda(s) de R$ 0.50\n",c_50);
+printf("%d moeda(s) de R$ 0.25\n",c_25);
+printf("%d moeda(s) de R$ 0.10\n",c_10);
+printf("%d moeda(s) de R$ 0.05\n",c_05);
+printf("%d moeda(s) de R$ 0.01\n",c_01);
+
 
  return 0;
 }
