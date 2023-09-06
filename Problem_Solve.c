@@ -1,16 +1,16 @@
 #include<stdio.h>
 int main(){
-int T,i,a,b,c,sum1,sum2,sum3;
-scanf("%d",&T);
-for(i=0; i<T; i++){
-   scanf("%d%d%d",&a,&b,&c);
-  sum1 = a+b;
-  sum2 = b+c;
-  sum3 = a+c;
-  if(sum1%2!=0 || sum2%2!=0 || sum3%2!=0)
-   printf("YES\n");
-   else
-   printf("NO\n");
+int t,n,i,computer1,computer2;
+scanf("%d",&t);
+for(i=0;i<t;i++){
+    scanf("%d",&n);
+    computer1 = n-10;
+    computer2 = n-(n-10);
+    if(n>10)
+    printf("%d %d\n",computer1, computer2);
+    else
+    printf("0 %d\n",n);
 }
+
  return 0;
 }
