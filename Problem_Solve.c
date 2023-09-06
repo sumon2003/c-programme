@@ -1,17 +1,11 @@
 #include<stdio.h>
-#include<math.h>
 int main(){
-double a,b,c,root,X1,X2;
-scanf("%lf%lf%lf",&a,&b,&c);
-root=sqrt((b*b)-(4*a*c));
-X1=(-b+root)/(2*a);
-X2=(-b-root)/(2*a);
-if(a==0 || root<=0){
-    printf("Impossivel calcular\n");
-}else{
-    printf("R1 = %.5lf\n",X1);
-    printf("R2 = %.5lf\n",X2);
+int T,a,b,i;
+scanf("%d",&T);
+for(i=0;i<T;i++){ 
+    scanf("%d%d",&a,&b);
+    if(a<10 && b<10)
+    printf("case %d: %d\n",i+1,a+b);   
 }
-
  return 0;
 }
