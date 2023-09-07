@@ -1,14 +1,27 @@
 #include<stdio.h>
 int main(){
-int t,i,a,b,total;
-scanf("%d",&t);
-for(i=0;i<t;i++){
-   scanf("%d%d",&a,&b);
-   total = a*b;
-   if(total>9999 && total<100000 && total!=0)
-   printf("YES\n");
-   else
-   printf("NO\n");
+float x,y;
+scanf("%f%f",&x,&y);
+if(x>0 && y>0){
+    printf("Q1\n");
+}
+else if(x<0 && y>0){
+    printf("Q2\n");
+}
+else if(x<0 && y<0){
+    printf("Q3\n");
+}
+else if(x>0 && y<0){
+    printf("Q4\n");
+}
+else if(x==0 && y==0){
+    printf("Origem\n");
+}
+else if(x>0 && y==0){
+    printf("Eixo X\n");
+}
+else if(x==0 && y>0){
+    printf("Exio Y");
 }
  return 0;
 }
