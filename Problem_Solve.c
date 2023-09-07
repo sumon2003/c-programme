@@ -1,16 +1,20 @@
 #include<stdio.h>
 int main(){
-int t,n,i,computer1,computer2;
+int t,i, a,b,c,d,count=0;
 scanf("%d",&t);
 for(i=0;i<t;i++){
-    scanf("%d",&n);
-    computer1 = n-10;
-    computer2 = n-(n-10);
-    if(n>10)
-    printf("%d %d\n",computer1, computer2);
-    else
-    printf("0 %d\n",n);
+    scanf("%d%d%d%d",&a,&b,&c,&d);
+    if(a<b){
+        count++;
+    }
+    if(a<c){
+        count++;
+    }
+    if(a<d){
+        count++;
+    }
+ printf("%d\n",count);
+ count=0;       
 }
-
  return 0;
 }
