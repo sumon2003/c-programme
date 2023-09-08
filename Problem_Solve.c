@@ -1,12 +1,17 @@
 #include<stdio.h>
 int main(){
-int n,m,k;
-scanf("%d%d%d",&n,&m,&k);
-if(n<=m && n<=k){
-    printf("Yes\n");
+int s,v1,v2,t1,t2,time1,time2;
+scanf("%d%d%d%d%d",&s,&v1,&v2,&t1,&t2);
+time1 = s * v1 + 2 * t1;
+time2 = s * v2 + 2 * t2;
+if(time1<time2){
+    printf("First\n");
 }
-else{
-    printf("No\n");
+if(time1>time2){
+    printf("Second\n");
+}
+if(time1==time2){
+    printf("Friendship\n");
 }
  return 0;
 }
