@@ -1,17 +1,14 @@
 #include<stdio.h>
 int main(){
-int num,i,divission;
-scanf("%d",&num);
-for(i=0; i<4; i++){
-    divission = num/10;
+float n,q ,p;
+scanf("%f",&n);
+p = floor(n);
+q = n-p;
+if(n==p){
+printf("int %.0f\n",p);
 }
- if(divission%2!=0 && divission<10){
-    printf("ODD");
+else if(n!=p){
+printf("float %.0f %.3f\n",p,q);
 }
-else if(divission%2==0 && divission>10){
-     printf("EVEN");
-}
-
-   
 return 0;
 }
