@@ -1,14 +1,11 @@
 #include<stdio.h>
 int main(){
-float n,q ,p;
-scanf("%f",&n);
-p = floor(n);
-q = n-p;
-if(n==p){
-printf("int %.0f\n",p);
-}
-else if(n!=p){
-printf("float %.0f %.3f\n",p,q);
-}
+int ar[] = {1,2,4,6,8,10};
+int i,count=0;
+for(i=0; ar[i]!='\0'; i++){
+    count++;
+}    
+    printf("The length of the array is %d\n",count);
+
 return 0;
 }
