@@ -1,20 +1,10 @@
 #include <stdio.h>
 
 int main() {
-    int n; 
-    scanf("%d", &n); 
-
-    for (int i = 0; i < n; i++) {
-        int x;
-        scanf("%d", &x);
-
-        if (x == 1999) {
-            printf("Correct\n");
-            break;
-        } else {
-            printf("Wrong\n");
-        }
-    }
-
+   int N,i;
+   scanf("%d",&N);
+   for(i=1;i<=N;i++){
+    printf("%d\n",i);
+   }
     return 0;
 }
