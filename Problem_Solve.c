@@ -1,19 +1,20 @@
 #include <stdio.h>
 int main() {
-    int A,B,C;
-    scanf("%d%d%d",&A,&B,&C);
-    if(A>B && A>C)
+    int n,i,value;
+    scanf("%d",&n);
+    for(i=0; i<n; i++) 
     {
-        printf("A is greater than B,C");
-    }
-    else if(B>A && B>C){
-        printf("B is greater than A,C");
-    }
-    else if(C>A && C>B)
-    {
-        printf("C is greater than A,B");
-    }
+        scanf("%d",&value);
+        if(value%2==0)
+        {
+            printf("Even\n");
+        }
+        else{
+            printf("ODD\n");
+        }
 
+    }
+   
    
     return 0;
 }
