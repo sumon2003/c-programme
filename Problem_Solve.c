@@ -1,17 +1,9 @@
 #include <stdio.h>
 int main() {
-    int n,i;
-    scanf("%d",&n);
-    int arr[n];
-    for(i=0; i<n; i++){
-        scanf("%d",&arr[i]);
-    }
-    int max = arr[0];
-    for(i=0; i<n; i++){
-        if(max<arr[i]){
-            max=arr[i];
-        }
-    }
-    printf("%d",max);
+   int arr[]={1,2,3,4,5},sum=0,i;
+   for(i=0;i<5;i++){
+    sum=sum + arr[i];//1+2=3+3=6+4=10+5=15
+   }
+   printf("%d",sum);
     return 0;
 }
