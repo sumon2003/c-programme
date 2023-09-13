@@ -1,6 +1,7 @@
 #include <stdio.h>
 int main() {
-    int A=5,B=7,C=6;
+    int A,B,C;
+    scanf("%d%d%d",&A,&B,&C);
     if(A>B && A>C)
     {
         printf("A is greater than B,C");
@@ -10,7 +11,7 @@ int main() {
     }
     else if(C>A && C>B)
     {
-        printf("C is greater than B,C");
+        printf("C is greater than A,B");
     }
 
    
