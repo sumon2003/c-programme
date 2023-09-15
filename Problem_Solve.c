@@ -1,10 +1,14 @@
 #include<stdio.h>
 int main()
 {
-    int a,b,c;
-    scanf("%d%d",&a,&b);
-    c = a%b;
-    printf("%d",c);
+    int x = 5, y = 10;
+    x += y++;
+    ++x;
+    printf("x = %d, y = %d\n", x, y);
+    --y, x++;
+    printf("x = %d, y = %d\n", x, y--);
+    y %= x++ + 2;
+    printf("x = %d, y = %d\n", x, y);
+    return 0;
 
-return 0;
 }
