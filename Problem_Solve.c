@@ -7,15 +7,29 @@
 #include <stdbool.h>
 int main()
 {
-    char C;
-    scanf("%c",&C);
-    if(C>='a' && C<'z'){
-        printf("%c\n",C+1);
+    long long a,b,c,d;
+    scanf("%lld %lld %lld %lld",&a,&b,&c,&d);
+    if(a+b-c==d){
+        printf("YES\n");
     }
-    else if(C>='a' && C<='z'){
-        printf("%c\n",C-25);
+    else if(a-b+c==d){
+        printf("YES\n");
     }
-
+    else if(a+b*c==d){
+        printf("YES\n");
+    }
+    else if(a*b+c==d){
+        printf("YES\n");
+    }
+    else if(a*b-c==d){
+        printf("YES\n");
+    }
+    else if(a-b*c==d){
+        printf("YES\n");
+    }
+    else{
+        printf("NO\n");
+    }
     return 0;
 
 }
