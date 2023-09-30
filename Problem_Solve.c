@@ -7,14 +7,10 @@
 #include <stdbool.h>
 int main()
 {
-   int w;
-   scanf("%d",&w);
-   if(w%2==0 && w!=2){
-    printf("YES\n");
-   }
-   else{
-    printf("NO\n");
-   }
+   int x;
+   scanf("%d",&x);
+   int cubic = x*x*x;
+   printf("%d\n",cubic);
     return 0;
 
 }
