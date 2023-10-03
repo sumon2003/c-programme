@@ -1,20 +1,22 @@
 #include<stdio.h>
 int main(){
-int t,i, a,b,c,d,count=0;
-scanf("%d",&t);
-for(i=0;i<t;i++){    
- scanf("%d%d%d%d",&a,&b,&c,&d);
-    if(a<b){
-        count++;
-    }
-    if(a<c){
-        count++;
-    }
-    if(a<d){
-        count++;
-    }
- printf("%d\n",count);
- count=0;       
-}    
+int n;
+scanf("%d",&n);
+int arr[n],i;
+for(i=0; i<n; i++){
+    scanf("%d",&arr[i]);
+}
+int num,flag=0;
+scanf("%d",&num);
+for(i=0; i<n; i++){
+    if(num==arr[i]){
+        printf("Index is: %d\n",i);
+        flag = 1;
+        break;
+    }    
+}
+if(!flag){
+    printf("%d not found\n",num);
+}
 return 0;
 }
