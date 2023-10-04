@@ -8,20 +8,19 @@
 #include<stdbool.h>
 int main()
 {
- int num,step_num;
- scanf("%d",&num);
- if(num%5==0)
- {
-  step_num = (num/5);
-  printf("%d\n",step_num);
+ int n,k,i,count=0;
+ scanf("%d %d",&n,&k);
+ int arr[n];
+ for(i=0; i<n; i++){
+  scanf("%d",&arr[i]);
  }
- else if(num%5 != 0){
-  step_num = (num/5)+1;
-  printf("%d",step_num);
+ for(i=0; i<n; i++){
+  if(arr[i]>=arr[k-1] && arr[i]!=0){
+    count++;
+  }
+  
  }
- else if(num>=1 && num<=5){
-  printf("1\n");
- }
+ printf("%d",count);
 
 
 }
