@@ -8,15 +8,18 @@
 #include<stdbool.h>
 int main()
 {
-   int T,N,i,factorial=1,j;
-   scanf("%d",&T);
-   for(i=0; i<T; i++){
-      scanf("%d",&N);
-      for(j=1; j<=N; j++){
-      factorial = factorial*j;
+   int x,i,count = 0;
+   scanf("%d",&x);
+   for(i=0; i<x; i++){
+      if(x%(x-i)==0){
+         count++;
       }
-      printf("%d\n",factorial);
-      factorial = 1;
+   }
+   if(count==2){
+      printf("YES\n");
+   }
+   else if(count!=2){
+      printf("NO\n");
    }
 
  return 0;
