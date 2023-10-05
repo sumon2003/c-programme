@@ -8,14 +8,20 @@
 #include<stdbool.h>
 int main()
 {
- long long n,m,a,length_ceil,width_ceil,min_num_flagstones;
- double length,width;
- scanf("%lld %lld %lld",&n,&m,&a);
- length = (double)n/a;
- length_ceil = ceil(length);
- width = (double)m/a;
- width_ceil = ceil(width);
- min_num_flagstones = length_ceil * width_ceil;
+    int l1, r1, l2, r2;
+    scanf("%d %d %d %d", &l1, &r1, &l2, &r2);
 
-printf("%lld\n",min_num_flagstones);
+    // Calculate the boundaries of the intersection
+    int left_boundary = (l1 > l2) ? l1 : l2;
+    int right_boundary = (r1 < r2) ? r1 : r2;
+
+    // Check if there is a valid intersection
+    if (left_boundary <= right_boundary) {
+        printf("%d %d\n", left_boundary, right_boundary);
+    } else {
+        printf("-1\n");
+    }
+
+ 
+ return 0;
 }
