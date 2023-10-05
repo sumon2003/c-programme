@@ -8,11 +8,15 @@
 #include<stdbool.h>
 int main()
 {
-   int N,i,multiplication;
-   scanf("%d",&N);
-   for(i=1; i<13; i++){
-      multiplication = N * i;
-      printf("%d * %d = %d\n",N,i,multiplication);
+   int T,N,i,factorial=1,j;
+   scanf("%d",&T);
+   for(i=0; i<T; i++){
+      scanf("%d",&N);
+      for(j=1; j<=N; j++){
+      factorial = factorial*j;
+      }
+      printf("%d\n",factorial);
+      factorial = 1;
    }
 
  return 0;
