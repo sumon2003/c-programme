@@ -8,19 +8,19 @@
 #include<stdbool.h>
 int main()
 {
-    int N,first_digit,last_digit;
-    scanf("%d",&N);
-    first_digit = N / 10;
-    last_digit = N % 10;
-    if(N%10==0 && last_digit%first_digit==0){
-      printf("YES\n");
-    }
-    else if(first_digit%last_digit==0 || last_digit%first_digit==0){
-      printf("YES\n");
-    }
-    else{
-      printf("NO\n");
-    }
+   long long n,k,a;
+   double result;
+   scanf("%lld %lld %lld",&n,&k,&a);
+   result = (double)(n*k)/a;
+   if((n*k)%a != 0.0){
+      printf("double\n");
+   }
+   else if((long long)result>=1 && (long long)result<=2147483647){
+      printf("int\n");
+   }
+   else{
+      printf("long long\n");
+   }
  
  return 0;
 }
