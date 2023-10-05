@@ -8,19 +8,18 @@
 #include<stdbool.h>
 int main()
 {
-   long long n,k,a;
-   double result;
-   scanf("%lld %lld %lld",&n,&k,&a);
-   result = (double)(n*k)/a;
-   if((n*k)%a != 0.0){
-      printf("double\n");
+   int N,i;
+   scanf("%d",&N);
+   int arr[N];
+   for(i=0; i<N; i++){
+      scanf("%d",&arr[i]);
    }
-   else if((long long)result>=1 && (long long)result<=2147483647){
-      printf("int\n");
+   int max = arr[0];
+   for(i=0; i<N; i++){
+      if(max<arr[i]){
+      max = arr[i];
+      }
    }
-   else{
-      printf("long long\n");
-   }
- 
+   printf("%d\n",max);
  return 0;
 }
