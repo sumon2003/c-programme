@@ -8,22 +8,13 @@
 #include<stdbool.h>
 int main()
 {
-   int n,reverse = 0,last_digit;
-   scanf("%d",&n);
-   int Original = n;
-   while(n != 0){
-      last_digit = n % 10;
-      reverse = (reverse * 10) + last_digit;
-      n = n / 10;
-   }
-   printf("%d\n",reverse);
-   if(Original == reverse){
-      printf("YES\n");
-   }
-   else if(Original != reverse){
-      printf("NO\n");
-   }
-   
+  int n,i;
+  scanf("%d",&n);
+  for(i=1; i<=n; i++){
+    if(n%i==0){
+      printf("%d\n",i);
+    }
+  }
 
  return 0;
 }
