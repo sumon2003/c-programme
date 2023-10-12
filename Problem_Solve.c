@@ -1,32 +1,36 @@
-/// Sumon Khan ///
 #include<stdio.h>
-#include<math.h>
-#include<string.h>
-#include<stdlib.h>
-#include<assert.h>
-#include<limits.h>
 #include<stdbool.h>
 int main()
 {
-  int arr[]={10,20,30,40,50,60},i,temp;
-  printf("Original Array\n");
-  for(i=0; i<6; i++){
-    printf("%d ",arr[i]);
-  }  
-  printf("Original Array\n");
-  temp = arr[0];
-    arr[0] = arr[5];
-    arr[5] = temp;
-     temp = arr[1];
-    arr[1] = arr[4];
-    arr[4] = temp;
-     temp = arr[2];
-    arr[2] = arr[3];
-    arr[3] = temp;
-    for(i=0; i<6; i++){
-      printf("%d ",arr[i]);
+  int t,n,i,count=0;
+  scanf("%d",&t);
+  for(i=0; i<t; i++){
+    scanf("%d",&n);
+    for(int j=1; j<=n; j++){
+      if(n%j==0){
+        count=count+j;
+      }
     }
+    bool isprime = true;
+    if(count<=1){
+      isprime = false;
+    }else{
+      for(int k=2; k*k<=count; k++){
+        if(count%k==0){
+          isprime = false;
+          break;
+        }
+      }
+    }
+    if(isprime){
+      printf("Yes\n");
+    }
+    else{
+      printf("No\n");
+    }
+    count = 0;
+    
+  }
 
-  
  return 0;
 }
