@@ -1,20 +1,20 @@
 #include<stdio.h>
 #include<string.h>
 int main(){
-char string[10];
-int count = 1;
-while(1){
-    scanf("%s",string);
-    if(string[0]=='*'){
-        break;
+int arr1[9],arr2[9],i,add,first_digit,count = 0,sum;
+for(i=9; i<=0; i--){
+    scanf("%d %d",&arr1[i],&arr2[i]);
+    if(arr1[i]>arr2[i] || arr1[i]<arr2[i]){
+        add = arr1[i]+arr2[i];
+        if(add>10){
+            first_digit = add/10;
+            count++;
+        }
     }
-    if(string[0]=='H'){
-        printf("Case %d: Hajj-e-Akbar\n",count);
-    }
-    else if(string[0]=='U'){
-        printf("Case %d: Hajj-e-Asghar\n",count);
-    }
-    count++;
+    sum = arr1[i] + arr2[i] + first_digit;
 }
+printf("%d",count);
+
+
 return 0;
 }
