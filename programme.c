@@ -1,18 +1,17 @@
-#include<stdio.h>
-int main(){
-   long long n,i;
-   scanf("%lld",&n);
-   long long num[n];
-   for(i=0; i<n; i++){
-    scanf("%lld",&num[i]);
-   }
-   for(i=0; i<n; i++){
-     if(num[i]%2==0){
-        printf("Even\n");
-     }
-     else if(num[i]%2 != 0){
-        printf("Odd\n");
-     }
-   } 
-return 0;
+#include <stdio.h>
+
+int main() {
+    int n, k;
+    scanf("%d", &n);
+    int a[n];
+    for(int i = 0; i < n; i++){
+     scanf("%d", &a[i]);
+    }
+     scanf("%d", &k);
+    for(int i = 0; i < n; i++){
+        int index = (i + k) % n; 
+        printf("%d ", a[index]);
+    }
+
+    return 0;
 }
