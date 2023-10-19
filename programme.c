@@ -1,24 +1,18 @@
 #include<stdio.h>
 int main(){
-    int a,b,i=0;
-    char* arr[10]={"zero","one","two","three","four","five","six","seven","eight","nine"};
-    scanf("%d%d",&a,&b);
-    for(i=a;i<=b;i++){
-         if(i>9 && i%2==0)
-            {
-             printf("even\n");
-            }
-         else if(i>9 && i%2)
-       {
-         printf("odd\n");
-       }
-         else
-        {
-         printf("%s\n",arr[i]);
-        }
-
-    }
-
-
+   long long n,i;
+   scanf("%lld",&n);
+   long long num[n];
+   for(i=0; i<n; i++){
+    scanf("%lld",&num[i]);
+   }
+   for(i=0; i<n; i++){
+     if(num[i]%2==0){
+        printf("Even\n");
+     }
+     else if(num[i]%2 != 0){
+        printf("Odd\n");
+     }
+   } 
 return 0;
 }
