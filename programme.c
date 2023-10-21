@@ -2,18 +2,18 @@
 #include<string.h>
 
 int main() {
-   int t,i;
-   char string[101];
+   int t,i,count=0;
+   char bit[10];
    scanf("%d",&t);
    for(i=0; i<t; i++){
-    scanf("%s",string);
-   int len = strlen(string);
-   if(len>10){
-    printf("%c%d%c\n",string[0],len-2,string[len-1]);
+    scanf("%s",bit);
+    if(bit[0]=='+' || bit[2]=='+'){
+      count++;
+    }
+    else if(bit[0]=='-' || bit[2]=='-'){
+        count--;
+    }
    }
-   else{
-    printf("%s\n",string);
-   }
-}
+   printf("%d\n",count);
   return 0;
 }
