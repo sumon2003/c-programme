@@ -2,12 +2,9 @@
 #include<string.h>
 
 int main() {
-   char string1[101],string2[101];
-   scanf("%s %s",string1,string2);
-   int len = strlen(string1);
-   int i;
-   for(i=0; i<len; i++){
-    
-   }
+   char ch;
+   printf("Enter the first letter of your name: \n");
+   ch = getchar();
+   printf("The first letter of my name is %c.\n",ch);
   return 0;
 }
