@@ -1,17 +1,19 @@
-#include <stdio.h>
+#include<stdio.h>
+#include<string.h>
 
 int main() {
-    int n, k;
-    scanf("%d", &n);
-    int a[n];
-    for(int i = 0; i < n; i++){
-     scanf("%d", &a[i]);
-    }
-     scanf("%d", &k);
-    for(int i = 0; i < n; i++){
-        int index = (i + k) % n; 
-        printf("%d ", a[index]);
-    }
-
-    return 0;
+   int t,i;
+   char string[101];
+   scanf("%d",&t);
+   for(i=0; i<t; i++){
+    scanf("%s",string);
+   int len = strlen(string);
+   if(len>10){
+    printf("%c%d%c\n",string[0],len-2,string[len-1]);
+   }
+   else{
+    printf("%s\n",string);
+   }
+}
+  return 0;
 }
