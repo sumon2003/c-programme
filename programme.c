@@ -2,18 +2,11 @@
 #include<string.h>
 
 int main() {
-   int t,i,count=0;
-   char bit[10];
-   scanf("%d",&t);
-   for(i=0; i<t; i++){
-    scanf("%s",bit);
-    if(bit[0]=='+' || bit[2]=='+'){
-      count++;
-    }
-    else if(bit[0]=='-' || bit[2]=='-'){
-        count--;
-    }
-   }
-   printf("%d\n",count);
+   int m,n,square,max_num_dominoes;
+   scanf("%d %d",&m,&n);
+   square = m * n;
+   max_num_dominoes = square/2;
+   printf("%d",max_num_dominoes);
+   
   return 0;
 }
