@@ -2,11 +2,12 @@
 #include<string.h>
 
 int main() {
-   int m,n,square,max_num_dominoes;
-   scanf("%d %d",&m,&n);
-   square = m * n;
-   max_num_dominoes = square/2;
-   printf("%d",max_num_dominoes);
-   
+   char string1[101],string2[101];
+   scanf("%s %s",string1,string2);
+   int len = strlen(string1);
+   int i;
+   for(i=0; i<len; i++){
+    
+   }
   return 0;
 }
