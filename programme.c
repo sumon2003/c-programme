@@ -2,16 +2,12 @@
 #include<string.h>
 #include<ctype.h>
 int main() {
-  int n,i,count=0;
-  char colour[51];
-  scanf("%d",&n);
-  scanf("%s",colour);
-  for(i=0; i<n; i++)
-  {
-    if(colour[i]==colour[i+1])
-    {
-      count++;
-    }
+  int a,b,count=0;
+  scanf("%d %d",&a,&b);
+  while(a<=b){
+    a=a+a+a;
+    b=b+b;
+    count++;
   }
   printf("%d",count);
 
