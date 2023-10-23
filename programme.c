@@ -3,25 +3,28 @@
 #include<ctype.h>
 #include<math.h>
 int main(){
-char string[101],out_string[101];
-  scanf("%s",string);
-  int length = strlen(string);
-  int i,j=0;
-  for(i=0; i<length; i++)
-  {
-   string[i] = tolower(string[i]);
-   if(string[i] != 'a' && string[i] != 'e' && string[i] != 'i' && string[i] != 'o' && string[i] != 'u' && string[i] != 'y')
-   {
-     out_string[j] = string[i];
-      j++;
-   }
+char string[101];
+scanf("%s",string);
+int len_string = strlen(string);
+int i, count_upper = 0, count_lower = 0;
+for(i=0; i<len_string; i++){
+  if(string[i]>='A' && string[i]<='Z'){
+    count_upper++;
   }
-out_string[j]='\0';
-  int len = strlen(out_string);
-  for(int k=0; k<len; k++)
-  {
-   printf(".%c",out_string[k]);
+  else if(string[i]>='a' && string[i]<='z'){
+    count_lower++;
   }
+}
+//printf("%d\n",count_upper);
+//printf("%d\n",count_lower);
+for(i=0; i<len_string; i++){
+  if(count_upper>count_lower){
+    printf("%c",toupper(string[i]));
+  }
+  else if(count_upper<=count_lower){
+    printf("%c",tolower(string[i]));
+  }
+}
 
   return 0;
 }
