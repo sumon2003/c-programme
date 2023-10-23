@@ -4,18 +4,24 @@
 #include<math.h>
 int main(){
 char S[100001];
-fgets(S, sizeof(S), stdin);
-int len_S = strlen(S);
-int i;
-for(i=0; i<len_S; i++){
-  S[i] = islower(S[i]) ? toupper(S[i]) : tolower(S[i]);//islower() is a library function of #include<ctype.h>
+int t,i,j;
+int len_S,count=0;
+scanf("%d",&t);
+for(i=0; i<t; i++){
+  scanf("%s",S);
+  len_S = strlen(S);
+  for(j=0; j<len_S-2; j++){
+    if(S[j]==S[j+2] && S[j] != S[j+1]){
+      count++;
+    }
+  }
+if(count>0){
+  printf("Good\n");
 }
-for(i=0; i<len_S; i++){
-  if(S[i] == ','){
-    printf(" ");
-    continue;
-  }  
-  printf("%c",S[i]);
+else{
+  printf("Bad\n");
+}
+count=0;
 }
 
   return 0;
