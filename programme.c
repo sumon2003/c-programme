@@ -3,21 +3,22 @@
 #include<ctype.h>
 #include<math.h>
 int main(){
-char x[21],y[21];
-scanf("%s",x);
-scanf("%s",y);
-int i;
-for(i=0; i<20; i++){
-  if(x[i]<y[i]){
-    printf("%s",x);
-    return 0;
-  }
-  else if(x[i]>y[i]){
-    printf("%s",y);
-    return 0;
-  }
-}
-printf("%s\n",x); // If the loop completes, it means the strings are equal, so print any of them
+char a[11],b[11];
+scanf("%s",a);
+scanf("%s",b);
+
+int len_a = strlen(a);
+int len_b = strlen(b);
+
+printf("%d %d\n",len_a,len_b);
+printf("%s%s\n",a,b);
+
+int swap = a[0];
+    a[0] = b[0];
+    b[0] = swap;
+
+printf("%s %s\n",a,b);
+
   return 0;
 }
 
