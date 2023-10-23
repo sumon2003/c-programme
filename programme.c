@@ -1,14 +1,23 @@
 #include<stdio.h>
 #include<string.h>
 #include<ctype.h>
-int main() {
- char S[1001],T[1001];
- scanf("%s",S);
- scanf("%s",T);
- int len_S = strlen(S);
- int len_T = strlen(T);
- printf("%d %d\n",len_S,len_T);
- printf("%s %s",S,T);
+#include<math.h>
+int main(){
+ char s[1000001];
+ fgets(s, sizeof(s), stdin);
+ int len = strlen(s);
+ char c;
+ int i;
+ for(i=0; i<len; i++)
+ {
+  c = s[i];
+  if(c == '\\')
+  {
+    break;
+  }
+  printf("%c",c);
+ }
+ printf("\n");
 
   return 0;
 }
