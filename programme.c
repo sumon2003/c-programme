@@ -3,15 +3,20 @@
 #include<ctype.h>
 #include<math.h>
 int main(){
-char S[1000001];
-scanf("%s",S);
+char S[100001];
+fgets(S, sizeof(S), stdin);
 int len_S = strlen(S);
-int i,count=0;
-for(i=0; i<len_S; i++)
-{
-  count += S[i] - '0'; // replace string to ASCII to a string number 
-}                      //Then Count++
-printf("%d\n",count);
+int i;
+for(i=0; i<len_S; i++){
+  S[i] = islower(S[i]) ? toupper(S[i]) : tolower(S[i]);//islower() is a library function of #include<ctype.h>
+}
+for(i=0; i<len_S; i++){
+  if(S[i] == ','){
+    printf(" ");
+    continue;
+  }  
+  printf("%c",S[i]);
+}
 
   return 0;
 }
