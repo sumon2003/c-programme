@@ -3,27 +3,20 @@
 #include<ctype.h>
 #include<math.h>
 int main(){
-char string[101];
-scanf("%s",string);
-int len_string = strlen(string);
-int i, count_upper = 0, count_lower = 0;
-for(i=0; i<len_string; i++){
-  if(string[i]>='A' && string[i]<='Z'){
-    count_upper++;
-  }
-  else if(string[i]>='a' && string[i]<='z'){
-    count_lower++;
+int n,i,j;
+scanf("%d",&n);
+int arr[3],count[3]={0};
+for(i=0; i<n; i++){
+  for(j=0; j<3; j++){
+    scanf("%d",&arr[j]);
+    count[j] += arr[j];
   }
 }
-//printf("%d\n",count_upper);
-//printf("%d\n",count_lower);
-for(i=0; i<len_string; i++){
-  if(count_upper>count_lower){
-    printf("%c",toupper(string[i]));
-  }
-  else if(count_upper<=count_lower){
-    printf("%c",tolower(string[i]));
-  }
+if(count[0] == 0 && count[1] == 0 && count[2] == 0){
+  printf("YES\n");
+}
+else{
+  printf("NO\n");
 }
 
   return 0;
