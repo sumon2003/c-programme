@@ -3,21 +3,18 @@
 #include<ctype.h>
 #include<math.h>
 int main(){
-int n,i,j;
-scanf("%d",&n);
-int arr[3],count[3]={0};
-for(i=0; i<n; i++){
-  for(j=0; j<3; j++){
-    scanf("%d",&arr[j]);
-    count[j] += arr[j];
+int n,k,i;
+scanf("%d %d",&n,&k);
+for(i=0; i<k; i++){
+  int last_digit=n%10;
+  if(last_digit == 0){
+    n/=10;
+  }
+  else if(last_digit != 0){
+    n--;
   }
 }
-if(count[0] == 0 && count[1] == 0 && count[2] == 0){
-  printf("YES\n");
-}
-else{
-  printf("NO\n");
-}
+printf("%d\n",n);
 
   return 0;
 }
