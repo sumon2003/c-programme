@@ -3,15 +3,23 @@
 #include<ctype.h>
 #include<math.h>
 int main(){
-char s1[101],s2[101];
-scanf("%s",s1);
-scanf("%s",s2);
-strrev(s1);
-if(strcmp(s1, s2) == 0){
-  printf("YES");
-}else{
-  printf("NO");
+int n,h;
+scanf("%d %d",&n,&h);
+int arr[n],i,count=0;
+for(i=0; i<n; i++){
+  scanf("%d",&arr[i]);
 }
+for(i=0; i<n; i++){
+  if(arr[i]<=h){
+    count++;
+  }
+  if(arr[i]>h){
+    count+=2;
+  }
+}
+printf("%d",count);
+
+
   return 0;
 }
 
