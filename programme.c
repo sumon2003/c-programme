@@ -2,6 +2,7 @@
 #include<string.h>
 #include<ctype.h>
 #include<math.h>
+//USE of sprintf() function//
 int main(){
 long long int num;
 scanf("%lld",&num);
