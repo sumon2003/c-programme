@@ -3,22 +3,22 @@
 #include<ctype.h>
 #include<math.h>
 int main(){
-char S[101];
-scanf("%s",S);
-int len_S = strlen(S);
-int i,count=1; //count=1 for the first player.There's at least one player from each team present on the field.
-for(i=0; i<len_S; i++){
-  if(S[i]==S[i+1]){
+long long int num;
+scanf("%lld",&num);
+char string[100];
+sprintf(string, "%lld", num);//Using sprintf() to convert a number into a String.
+int len_string = strlen(string);
+int i,count=0;
+for(i=0; i<len_string; i++){
+  if(string[i]=='7' || string[i]=='4'){
     count++;
-    if(count == 7){
-      printf("YES");
-      return 0;
-    }
-  }else{
-    count = 1;
   }
-}  
-printf("NO");
+}
+if(count==7 || count==4){
+  printf("YES");
+}else{
+  printf("NO");
+}
   return 0;
 }
 
