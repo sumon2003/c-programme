@@ -3,19 +3,22 @@
 #include<ctype.h>
 #include<math.h>
 int main(){
-int n,k,i;
-scanf("%d %d",&n,&k);
-for(i=0; i<k; i++){
-  int last_digit=n%10;
-  if(last_digit == 0){
-    n/=10;
+char S[101];
+scanf("%s",S);
+int len_S = strlen(S);
+int i,count=1; //count=1 for the first player.There's at least one player from each team present on the field.
+for(i=0; i<len_S; i++){
+  if(S[i]==S[i+1]){
+    count++;
+    if(count == 7){
+      printf("YES");
+      return 0;
+    }
+  }else{
+    count = 1;
   }
-  else if(last_digit != 0){
-    n--;
-  }
-}
-printf("%d\n",n);
-
+}  
+printf("NO");
   return 0;
 }
 
