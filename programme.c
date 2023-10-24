@@ -3,21 +3,22 @@
 #include<ctype.h>
 #include<math.h>
 int main(){
-int n,h;
-scanf("%d %d",&n,&h);
-int arr[n],i,count=0;
-for(i=0; i<n; i++){
-  scanf("%d",&arr[i]);
-}
-for(i=0; i<n; i++){
-  if(arr[i]<=h){
-    count++;
+int n,t;
+scanf("%d %d",&n,&t);
+char S[51],temp;
+scanf("%s",S);
+int i,j;
+for(j=0; j<t; j++){
+  for(i=0; i<n; i++){
+    if(S[i]=='B' && S[i+1]=='G'){
+      temp = S[i];
+      S[i] = S[i+1];
+      S[i+1] = temp;
+      i++;
+    }
   }
-  if(arr[i]>h){
-    count+=2;
-  }
 }
-printf("%d",count);
+printf("%s",S);
 
 
   return 0;
