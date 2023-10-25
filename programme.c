@@ -3,25 +3,24 @@
 #include<ctype.h>
 #include<math.h>
 int main(){
-int n,t;
-scanf("%d %d",&n,&t);
-char S[51],temp;
+char S[101];
 scanf("%s",S);
-int i,j;
-for(j=0; j<t; j++){
-  for(i=0; i<n; i++){
-    if(S[i]=='B' && S[i+1]=='G'){
-      temp = S[i];
-      S[i] = S[i+1];
-      S[i+1] = temp;
-      i++;
-    }
+int len_S = strlen(S);
+char word[] = "hello";
+int j=0, count=0, i;
+for(i=0; i<len_S; i++){
+  if(S[i]==word[j]){
+    j++;
+    count++;
   }
 }
-printf("%s",S);
-
-
+if(count==5){
+  printf("YES");
+}
+else{
+  printf("NO");
+}
+    
   return 0;
 }
-
  
