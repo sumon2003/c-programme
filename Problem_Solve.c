@@ -5,15 +5,19 @@ int main()
 {
   long long int n;
   scanf("%lld",&n);
-  long long int arr[n],i=0,sum=0;
-  while(i<n){
+  long long int arr[n],i;
+  for(i=0; i<n; i++){
     scanf("%lld",&arr[i]);
-    sum+=arr[i];
-    i++;
   }
-  long long int summation = llabs(sum);
-  printf("%lld",summation);
-
+  long long int num;
+  scanf("%lld",&num);
+  for(i=0; i<n; i++){
+    if(num == arr[i]){
+      printf("%lld",i);
+      return 0;
+    }
+  }
+  printf("-1");
  return 0;
 }
 
