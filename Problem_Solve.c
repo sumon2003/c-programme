@@ -5,11 +5,13 @@ void clearScreen() {
 }
 int main()
 {
-  
-  for(int j=1; j<=10; j++){
+  int n;
+  printf("Enter Your Number: ");
+  scanf("%d",&n);
+  clearScreen();
+  for(int j=1; j<=n; j++){
     printf("%d--->\n",j);
      for(int i=1; i<=10; i++){
-       clearScreen();
        printf("%d X %d = %d\n",j,i,j*i);
        Sleep(1500);
      }
