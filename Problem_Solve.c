@@ -8,16 +8,14 @@ int main()
   int arr[n],i;
   for(i=0; i<n; i++){
     scanf("%d",&arr[i]);
-    if(arr[i]>0){
-      printf("1 ");
+    if(arr[i]>10){
+      continue;
     }
-    else if(arr[i]==0){
-      printf("0 ");
-    }
-    else if(arr[i]<0){
-      printf("2 ");
+    else if(arr[i]<=10){
+      printf("A[%d] = %d\n",i,arr[i]);
     }
   }
+
 
  return 0;
 }
