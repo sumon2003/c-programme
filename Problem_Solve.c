@@ -3,21 +3,22 @@
 
 int main()
 {
-  long long int n;
-  scanf("%lld",&n);
-  long long int arr[n],i;
+  int n;
+  scanf("%d",&n);
+  int arr[n],i;
   for(i=0; i<n; i++){
-    scanf("%lld",&arr[i]);
-  }
-  long long int num;
-  scanf("%lld",&num);
-  for(i=0; i<n; i++){
-    if(num == arr[i]){
-      printf("%lld",i);
-      return 0;
+    scanf("%d",&arr[i]);
+    if(arr[i]>0){
+      printf("1 ");
+    }
+    else if(arr[i]==0){
+      printf("0 ");
+    }
+    else if(arr[i]<0){
+      printf("2 ");
     }
   }
-  printf("-1");
+
  return 0;
 }
 
