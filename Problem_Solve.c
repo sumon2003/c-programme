@@ -1,20 +1,19 @@
 #include<stdio.h>
-#include<windows.h>
-void clearScreen() {
-    printf("\033[H\033[J"); // ANSI escape code to clear the screen
-}
+#include<stdlib.h>
+
 int main()
 {
-  int n;
-  printf("Enter Your Number: ");
-  scanf("%d",&n);
-  clearScreen();
-  for(int j=1; j<=n; j++){
-    printf("%d--->\n",j);
-     for(int i=1; i<=10; i++){
-       printf("%d X %d = %d\n",j,i,j*i);
-       Sleep(1500);
-     }
+  long long int n;
+  scanf("%lld",&n);
+  long long int arr[n],i=0,sum=0;
+  while(i<n){
+    scanf("%lld",&arr[i]);
+    sum+=arr[i];
+    i++;
   }
+  long long int summation = llabs(sum);
+  printf("%lld",summation);
+
+ return 0;
 }
 
