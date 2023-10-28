@@ -10,15 +10,16 @@ int compare(const void *a, const void *b) {
 */
 int main()
 {
-  long long int n;
-  scanf("%lld",&n);
-  //Foemula: f(n) = (-1)^n * (n // 2) + (-1)^n * (n % 2)
-  if(n%2==0){
-    printf("%lld",n/2);
-  }else{
-    printf("%lld",-((n/2)+1));
-  }
-
+ int n,i;
+ scanf("%d",&n);
+ int arr[n];
+ double sum=0.0;
+ for(i=0; i<n; i++){
+  scanf("%d",&arr[i]);
+  sum += arr[i];
+ }
+ double result = sum/(n*100);
+ printf("%.12lf",result*100); 
  return 0;
 }
 
