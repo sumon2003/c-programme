@@ -10,16 +10,20 @@ int compare(const void *a, const void *b) {
 */
 int main()
 {
- int n,i;
- scanf("%d",&n);
- int arr[n];
- double sum=0.0;
- for(i=0; i<n; i++){
-  scanf("%d",&arr[i]);
-  sum += arr[i];
- }
- double result = sum/(n*100);
- printf("%.12lf",result*100); 
+ char str_i[101], str_j[101];
+ scanf("%s",str_i);
+ scanf("%s",str_j);
+ int str_i_len = strlen(str_i);
+ int i,j;
+for(i=0,j=0; i<str_i_len,j<str_i_len; i++,j++){
+    if(str_i[i]==str_j[i]){
+        printf("0");
+    }
+    else if(str_i[i]!=str_j[i]){
+        printf("1");
+    }
+}
+
  return 0;
 }
 
