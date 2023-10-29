@@ -10,19 +10,16 @@ int compare(const void *a, const void *b) {
 */
 int main()
 {
- char str_i[101], str_j[101];
- scanf("%s",str_i);
- scanf("%s",str_j);
- int str_i_len = strlen(str_i);
- int i,j;
-for(i=0,j=0; i<str_i_len,j<str_i_len; i++,j++){
-    if(str_i[i]==str_j[i]){
-        printf("0");
+ char string[101];
+ scanf("%s",string);
+ int len = strlen(string);
+ for(int i=0; i<len; i++){
+    if(string[i]=='H' || string[i]=='Q' || string[i]=='9'){
+        printf("YES");
+        return 0;
     }
-    else if(str_i[i]!=str_j[i]){
-        printf("1");
-    }
-}
+ }
+ printf("NO");
 
  return 0;
 }
