@@ -7,12 +7,12 @@
 
 int main(){
   int a;
-  printf("Enter a number: ");
+  printf("Enter a year: ");
   scanf("%d",&a);
-  if(a%5==0 && a%11==0){
-    printf("YES");
+  if((a%4==0 && a%100 !=0) || a%400==0){
+    printf("Leap Year");
   }else{
-    printf("NO");
-  }
+    printf("Sorry, I write the wrong year, exteremly sorry!!");
+  } 
   return 0;
 }
