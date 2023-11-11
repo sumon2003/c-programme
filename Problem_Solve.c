@@ -9,14 +9,10 @@ int main(){
   int a;
   printf("Enter a number: ");
   scanf("%d",&a);
-  if(a>0){
-    printf("%d is positive.\n",a);
-  }
-  else if(a<0){
-    printf("%d is negative.",a);
-  }
-  else if(a==0){
-    printf("The number is 0.");
+  if(a%5==0 && a%11==0){
+    printf("YES");
+  }else{
+    printf("NO");
   }
   return 0;
 }
