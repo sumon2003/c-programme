@@ -6,13 +6,17 @@
 
 
 int main(){
-  int a;
-  printf("Enter a year: ");
-  scanf("%d",&a);
-  if((a%4==0 && a%100 !=0) || a%400==0){
-    printf("Leap Year");
+  //@#$%abc
+  char a;
+  printf("Enter a character: ");
+  scanf("%c",&a);
+  if(a>='A' &&  a<='Z'){
+    printf("%c is alphabet.",a);
+  }
+  else if(a>='a' && a<='z'){
+    printf("%c is alphabet.",a);
   }else{
-    printf("Sorry, I write the wrong year, exteremly sorry!!");
-  } 
+    printf("%c is not an alphabet.",a);
+  }
   return 0;
 }
