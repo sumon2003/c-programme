@@ -4,21 +4,19 @@
 #include<math.h>
 #include<stdlib.h>
 
-void swap(int a, int b)
-{
-  
-  int temp = a;
-  a = b;
-  b = temp;
-
-  printf("%d %d",a,b);
-}
 
 int main(){
-  int a,b;
-  scanf("%d %d",&a,&b);
-
-  swap(a,b);
-   
+  int a;
+  printf("Enter a number: ");
+  scanf("%d",&a);
+  if(a>0){
+    printf("%d is positive.\n",a);
+  }
+  else if(a<0){
+    printf("%d is negative.",a);
+  }
+  else if(a==0){
+    printf("The number is 0.");
+  }
   return 0;
 }
