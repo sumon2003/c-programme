@@ -4,13 +4,11 @@
 #include<math.h>
 #include<stdlib.h>
 int main(){
-  int x = 5;
-  int *ptr;
-  ptr = &x;
-  printf("Value of x = %d\n",x);
-  printf("Address of x = %p\n",&x);
-  printf("Stored address to ptr of x = %p\n",ptr);
-  printf("Address of ptr = %p\n",&ptr);
-  printf("Value of ptr = %d\n",*ptr);
+  int arr[]={1,2,3,4,5};
+  int i;
+  for(i=0; i<5; i++){
+    printf("%d\n",arr[i]);
+  }
+
   return 0;
 }
