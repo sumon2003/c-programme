@@ -4,15 +4,17 @@
 #include<math.h>
 #include<stdlib.h>
 int main(){
-  int arr[100];
-  int i,sum=0;
-  for(i=0; i<5; i++){
-    scanf("%d",&arr[i]);
-    sum = sum+arr[i];
+  
+  char a;
+  printf("Enter a character: ");
+  scanf("%c",&a);
+  if(a >= '0' && a <= '9'){
+    printf("This is a Digit.");
+  }else{
+    printf("This is not a Digit.");
   }
-  printf("%d",sum);
+  
 
- 
-
+  
   return 0;
 }
