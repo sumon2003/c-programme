@@ -4,11 +4,15 @@
 #include<math.h>
 #include<stdlib.h>
 int main(){
-  int arr[]={1,2,3,4,5};
-  int i;
+  int arr[100];
+  int i,sum=0;
   for(i=0; i<5; i++){
-    printf("%d\n",arr[i]);
+    scanf("%d",&arr[i]);
+    sum = sum+arr[i];
   }
+  printf("%d",sum);
+
+ 
 
   return 0;
 }
