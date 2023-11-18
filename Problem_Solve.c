@@ -4,18 +4,21 @@
 //#include<math.h>
 //#include<stdlib.h>
 int main(){
-  int arr[3],i;
-  for(i=0; i<3; i++){
+  int arr1[3], arr2[3];
+  for(int i=0; i<3; i++){
     printf("element-%d:",i);
-    scanf("%d",&arr[i]);
+    scanf("%d",&arr1[i]);
   }
-  printf("The values store into the array are :\n");
-  for(i=0; i<3; i++){
-    printf("%d ",arr[i]);
+  printf("The elements stored in the first array are :\n");
+  for(int i=0; i<3; i++){
+    printf("%d ",arr1[i]);
   }
-  printf("\nThe values store into the array in reverse are :\n");
-  for(i=2; i>=0; i--){
-    printf("%d ",arr[i]);
+  for(int i=0; i<3; i++){
+    arr2[i] = arr1[i]; //Copy arr1 to arr2
+  }
+  printf("\nThe elements copied into the second array are :\n");
+  for(int i=0; i<3; i++){
+    printf("%d ",arr2[i]);
   }
 
 
