@@ -4,24 +4,18 @@
 //#include<math.h>
 //#include<stdlib.h>
 int main(){
-  int arr1[3], arr2[3];
-  for(int i=0; i<3; i++){
-    printf("element-%d:",i);
-    scanf("%d",&arr1[i]);
+  int n;
+  scanf("%d",&n);
+  int groups = 0;
+  int previous, current;
+  for(int i=0; i<n; i++){
+    scanf(" %d",&current);
+    if(i==0 || previous != current){
+      groups++;
+    }
+    previous = current;
   }
-  printf("The elements stored in the first array are :\n");
-  for(int i=0; i<3; i++){
-    printf("%d ",arr1[i]);
-  }
-  for(int i=0; i<3; i++){
-    arr2[i] = arr1[i]; //Copy arr1 to arr2
-  }
-  printf("\nThe elements copied into the second array are :\n");
-  for(int i=0; i<3; i++){
-    printf("%d ",arr2[i]);
-  }
+  printf("%d",groups);
 
-
-  
   return 0;
 }
