@@ -9,12 +9,21 @@ int main(){
       {4,5,6},
       {7,8,9}
     };
+    int sum = 0;
     for(int i=0; i<3; i++){
       for(int j=0; j<3; j++){
         printf("%d ",array[i][j]);
       }
       printf("\n");
     }
+    printf("Sum of the matrix = ");
+    for(int i=0; i<3; i++){
+      for(int j=0; j<3; j++){
+        sum += array[i][j];
+      }
+    }
+    printf("%d",sum);
+
 
 
   return 0;
