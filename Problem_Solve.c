@@ -4,18 +4,18 @@
 //#include<math.h>
 //#include<stdlib.h>
 int main(){
-  int n;
-  scanf("%d",&n);
-  int groups = 0;
-  int previous, current;
-  for(int i=0; i<n; i++){
-    scanf(" %d",&current);
-    if(i==0 || previous != current){
-      groups++;
+    int array[3][3]={
+      {1,2,3},
+      {4,5,6},
+      {7,8,9}
+    };
+    for(int i=0; i<3; i++){
+      for(int j=0; j<3; j++){
+        printf("%d ",array[i][j]);
+      }
+      printf("\n");
     }
-    previous = current;
-  }
-  printf("%d",groups);
+
 
   return 0;
 }
