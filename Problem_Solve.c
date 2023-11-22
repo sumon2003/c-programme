@@ -3,20 +3,22 @@
 //#include<ctype.h>
 //#include<math.h>
 //#include<stdlib.h>
-int Factorial(int n)
+
+int fibonacci(int n)
 {
-  if(n==0 || n==1){
+  if(n==0){
+    return 0;
+  }else if(n==1){
     return 1;
   }else{
-    return n * Factorial(n-1);
+    return fibonacci(n-1) + fibonacci(n-2);
   }
 }
-
 int main(){
   int number;
   scanf("%d",&number);
-  int factorial_result = Factorial(number);
-  printf("Factorial of %d! = %d",number,factorial_result);
+  int fibonacci_number = fibonacci(number);
+  printf("Fibonacci of %d is = %d",number,fibonacci_number);
 
 
   return 0;
