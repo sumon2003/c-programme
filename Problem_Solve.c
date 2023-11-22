@@ -4,22 +4,26 @@
 //#include<math.h>
 //#include<stdlib.h>
 
-int fibonacci(int n)
-{
-  if(n==0){
-    return 0;
-  }else if(n==1){
-    return 1;
-  }else{
-    return fibonacci(n-1) + fibonacci(n-2);
-  }
-}
-int main(){
-  int number;
-  scanf("%d",&number);
-  int fibonacci_number = fibonacci(number);
-  printf("Fibonacci of %d is = %d",number,fibonacci_number);
 
+
+void swp(int *a, int *b) {
+  *a = *a + *b;
+  *b = *a - *b;
+  *a = *a - *b;
+
+  printf("After Swaping: a = %d b = %d\n", *a, *b);
+}
+
+int main() {
+  int a = 5, b = 10;
+  printf("Before Swaping: a = %d, b = %d\n", a, b);
+
+  swp(&a, &b);
+
+  printf("After Swaping: a = %d b = %d\n", a, b);
 
   return 0;
 }
+
+
+
