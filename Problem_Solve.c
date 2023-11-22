@@ -4,23 +4,20 @@
 //#include<math.h>
 //#include<stdlib.h>
 
-
-
-void swp(int *a, int *b) {
-  *a = *a + *b;
-  *b = *a - *b;
-  *a = *a - *b;
-
-  printf("After Swaping: a = %d b = %d\n", *a, *b);
+void check_even_odd(int n)
+{
+  if(n % 2 == 0){
+    printf("%d is EVEN.",n);
+  }else{
+    printf("%d is ODD.",n);
+  }
 }
 
-int main() {
-  int a = 5, b = 10;
-  printf("Before Swaping: a = %d, b = %d\n", a, b);
-
-  swp(&a, &b);
-
-  printf("After Swaping: a = %d b = %d\n", a, b);
+int main(){
+  int number;
+  printf("Enter a number: ");
+  scanf("%d",&number);
+  check_even_odd(number);
 
   return 0;
 }
