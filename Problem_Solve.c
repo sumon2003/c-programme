@@ -3,14 +3,22 @@
 #include<ctype.h>
 //#include<math.h>
 //#include<stdlib.h>
-int main(){
-  char str[101];
-  scanf("%s",str);
-  int len = strlen(str);
-  for(int i=0; i<len; i++){
-   str[i] = tolower(str[i]);
+int fibonacci(int n)
+{
+  if(n==0){
+   return 0;
+  }else if(n==1){
+   return 1;
+  }else{
+   return fibonacci(n-1) + fibonacci(n-2);
   }
-  printf("%s",str);
+}
+int main(){
+  int n;
+  scanf("%d",&n);
+  int fibonacci_number = fibonacci(n);
+  printf("%d",fibonacci_number);
+  
   return 0;
 }
 
