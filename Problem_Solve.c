@@ -4,20 +4,35 @@
 //#include<math.h>
 //#include<stdlib.h>
 
-void check_even_odd(int n)
+void check_Palindrome(int n)
 {
-  if(n % 2 == 0){
-    printf("%d is EVEN.",n);
-  }else{
-    printf("%d is ODD.",n);
+  int original_number = n;
+  printf("Original number: %d\n",original_number);
+
+  int palindrome, reversed_number = 0;
+
+  while(n != 0){
+    palindrome = n % 10;
+    n /= 10; 
+    reversed_number = reversed_number * 10 + palindrome; 
   }
+
+  printf("Reversed Number: %d\n",reversed_number);
+
+  if(reversed_number == original_number){
+    printf("%d is palindrome.\n",original_number);
+  }else{
+    printf("%d is not palindrome.\n",original_number);
+  }
+
 }
 
 int main(){
   int number;
   printf("Enter a number: ");
   scanf("%d",&number);
-  check_even_odd(number);
+  check_Palindrome(number);
+
 
   return 0;
 }
