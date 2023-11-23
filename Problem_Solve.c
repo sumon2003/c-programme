@@ -3,21 +3,20 @@
 #include<ctype.h>
 //#include<math.h>
 //#include<stdlib.h>
-int fibonacci(int n)
+void pythagorean(int a, int b, int c)
 {
-  if(n==0){
-   return 0;
-  }else if(n==1){
-   return 1;
-  }else{
-   return fibonacci(n-1) + fibonacci(n-2);
-  }
+   int value1 = (a*a) + (b*b);
+   int value2 = (c*c);
+   if(value1 == value2){
+      printf("Yes\n");
+   }else{
+      printf("No\n");
+   }
 }
 int main(){
-  int n;
-  scanf("%d",&n);
-  int fibonacci_number = fibonacci(n);
-  printf("%d",fibonacci_number);
+ int a,b,c;
+ scanf("%d %d %d",&a,&b,&c);
+ pythagorean(a,b,c);
   
   return 0;
 }
