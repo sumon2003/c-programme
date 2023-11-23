@@ -9,12 +9,12 @@ void check_Palindrome(int n)
   int original_number = n;
   printf("Original number: %d\n",original_number);
 
-  int palindrome, reversed_number = 0;
+  int remainder, reversed_number = 0;
 
   while(n != 0){
-    palindrome = n % 10;
+    remainder = n % 10;
     n /= 10; 
-    reversed_number = reversed_number * 10 + palindrome; 
+    reversed_number = reversed_number * 10 + remainder; 
   }
 
   printf("Reversed Number: %d\n",reversed_number);
