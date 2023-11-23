@@ -3,20 +3,24 @@
 #include<ctype.h>
 //#include<math.h>
 //#include<stdlib.h>
-void pythagorean(int a, int b, int c)
-{
-   int value1 = (a*a) + (b*b);
-   int value2 = (c*c);
-   if(value1 == value2){
-      printf("Yes\n");
-   }else{
-      printf("No\n");
-   }
-}
 int main(){
- int a,b,c;
- scanf("%d %d %d",&a,&b,&c);
- pythagorean(a,b,c);
+ int n;
+ scanf("%d",&n);
+ int sum=0,digit;
+ while(n!=1 && n!=4){
+   sum=0;
+   while(n>0){
+      digit = n%10;
+      sum += digit*digit;
+      n/=10;
+   }
+   n=sum;
+ }
+ if(n==1){
+   printf("Happy\n");
+ }else{
+   printf("Not Happy\n");
+ }
   
   return 0;
 }
