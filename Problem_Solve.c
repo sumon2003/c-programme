@@ -1,20 +1,16 @@
-#include<stdio.h>
-#include<string.h>
-#include<ctype.h>
-//#include<math.h>
-//#include<stdlib.h>
-int main(){
- char str[101]; 
-    scanf("%s", str);
-    for (int i = 0; str[i] != '\0'; i++) {
-        str[i] = tolower(str[i]);
-    }
-    printf("%s\n", str);
+#include <stdio.h>
 
-
-  
-  return 0;
+int fib(int n) {
+    if (n == 0) return 0; // 0 1 2
+    if (n == 1) return 1;
+    
+    return fib(n - 1) + fib(n - 2);
 }
 
-
-
+int main() {
+    int n;
+    scanf("%d", &n);
+    printf("%d", fib(n));
+    
+ return 0;
+}
