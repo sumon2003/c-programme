@@ -1,31 +1,18 @@
 #include <stdio.h>
 
 int main() {
-  int t, n;
-  scanf("%d", &t);
-
-  for (int i = 0; i < t; i++) {
-
-    scanf("%d", &n);
-
-    int arr[n];
-    for (int j = 0; j < n; j++) {
-      scanf("%d", &arr[j]);
-    }
-    int sorting_possible = 1;
-    for (int j = 2; j < n-2; j++) {
-      if (arr[j - 1] < arr[j] && arr[j] > arr[j + 1]) {
-        sorting_possible = 0;
-        break; 
-      }
+    // Declare variables
+    int number = 1234;
+    int sum = 0;
+    int i;
+    // Add each digit to the sum
+    for(i=0; i<4; i++){
+        sum += number % 10;
+        number /= 10;
     }
 
-    if (sorting_possible) {
-      printf("YES\n");
-    } else {
-      printf("NO\n");
-    }
-  }
+    // Print the result
+    printf("The sum of the digits is: %d\n", sum);
 
-  return 0;
+ return 0;
 }
