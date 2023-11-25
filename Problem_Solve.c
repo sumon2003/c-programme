@@ -2,11 +2,11 @@
 
 int main() {
     // Declare variables
-    int number = 1234;
+    int number = 1452;
     int sum = 0;
-    int i;
+
     // Add each digit to the sum
-    for(i=0; i<4; i++){
+    while (number > 0) {
         sum += number % 10;
         number /= 10;
     }
