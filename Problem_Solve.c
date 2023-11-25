@@ -1,16 +1,31 @@
 #include <stdio.h>
 
-int fib(int n) {
-    if (n == 0) return 0; // 0 1 2
-    if (n == 1) return 1;
-    
-    return fib(n - 1) + fib(n - 2);
-}
-
 int main() {
-    int n;
+  int t, n;
+  scanf("%d", &t);
+
+  for (int i = 0; i < t; i++) {
+
     scanf("%d", &n);
-    printf("%d", fib(n));
-    
- return 0;
+
+    int arr[n];
+    for (int j = 0; j < n; j++) {
+      scanf("%d", &arr[j]);
+    }
+    int sorting_possible = 1;
+    for (int j = 2; j < n-2; j++) {
+      if (arr[j - 1] < arr[j] && arr[j] > arr[j + 1]) {
+        sorting_possible = 0;
+        break; 
+      }
+    }
+
+    if (sorting_possible) {
+      printf("YES\n");
+    } else {
+      printf("NO\n");
+    }
+  }
+
+  return 0;
 }
