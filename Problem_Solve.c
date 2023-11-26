@@ -1,18 +1,17 @@
 #include <stdio.h>
-
 int main() {
-    // Declare variables
-    int number = 1452;
-    int sum = 0;
-
-    // Add each digit to the sum
-    while (number > 0) {
-        sum += number % 10;
-        number /= 10;
+    int n,a,b;
+    scanf("%d",&n);
+    int tram=0, capacity=0;
+    for(int i=0; i<n; i++){
+        scanf("%d %d",&a,&b);
+         tram = tram - a + b; 
+         if(tram > capacity){
+            capacity = tram;
+         }  
     }
-
-    // Print the result
-    printf("The sum of the digits is: %d\n", sum);
+    printf("%d\n",capacity);
+    
 
  return 0;
 }
