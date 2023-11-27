@@ -1,7 +1,8 @@
 #include <stdio.h>
-
+#define print printf
+#define scan scanf
 int main() {
-   printf("Hello World!");
+   print("Hello World!");
 
     return 0;
 }
