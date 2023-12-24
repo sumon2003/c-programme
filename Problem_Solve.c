@@ -16,5 +16,8 @@ int main() {
    fgets(str3, sizeof(str3), stdin);
    printf("%s",str3);
 
+//Don't run it combined all user input.
+//Befor run it please comment any two user input.
+
     return 0;
 }
