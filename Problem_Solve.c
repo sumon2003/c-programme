@@ -1,23 +1,17 @@
 #include <stdio.h>
-
+#include <string.h>
 int main() {
-   //User input using scanf() 
-   char str1[100];
-   scanf("%s",str1);
-   printf("%s\n",str1);
-
-   //User input using gets
-   char str2[100];
-   gets(str2);
-   printf("%s\n",str2);
-
-   //User input using fgets
-   char str3[100];
-   fgets(str3, sizeof(str3), stdin);
-   printf("%s",str3);
-
-//Don't run it combined all user input.
-//Befor run it please comment any two user input.
+   char str1[] = "kumon";
+   char str2[] = "shan";
+   int result = strcmp(str1, str2);
+   printf("%d\n",result);
+   if(result == 0){
+    printf("The two string are equal.");
+   }else if(result > 0){
+    printf("str1 is lexicografically greater than str2.");
+   }else{
+    printf("str1 is lexicografically less than str2.");
+   }
 
     return 0;
 }
