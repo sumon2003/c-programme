@@ -1,18 +1,22 @@
 /*//  بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ  //*/
 /*//   Md Sumon Hossain Khan   //*/
 
+
 #include <stdio.h>
 #include <string.h>
+void swap(int *a, int *b)
+{
+    int temp = *a;
+    *a = *b;
+    *b = temp;
+}
 int main() {
 
-   char str1[101] = "Md Sumon Hossain Khan";
-   char str2[101];
-
-   // Now we will copy str1 to str2;
-   strcpy(str2, str1);
-   
-   printf("The original string: %s\n",str1);
-   printf("The copy string: %s\n",str2);
+   int a, b;
+   scanf("%d %d",&a, &b);
+   printf("Before swap: a = %d, b = %d\n", a,b);
+   swap(&a,&b);
+   printf("After swap: a = %d, b = %d",a,b);
     return 0;
 }
 
