@@ -1,17 +1,15 @@
 /*//  بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ  //*/
-//*/   Md Sumon Hossain Khan   //*/
+/*//   Md Sumon Hossain Khan   //*/
 #include <stdio.h>
 #include <string.h>
 int main() {
 
-   char str1[101] = "sumon";
-   char str2[] = " khan";
+   char str[101] = "Md Sumon Hossain Khan";
    
-   //concatenate str2 to end of str1
-   strcat(str1, str2);
-   
-   printf("%s\n", str1);
-   
+   // Reverse the string using strrev (if available)
+   strrev(str);
+
+   printf("%s", str);
     return 0;
 }
 
