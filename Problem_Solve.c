@@ -1,3 +1,5 @@
+/*//  بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ  //*/
+//*/   Md Sumon Hossain Khan   //*/
 #include <stdio.h>
 #include <string.h>
 int main() {
@@ -15,3 +17,4 @@ int main() {
 
     return 0;
 }
+
