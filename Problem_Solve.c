@@ -4,19 +4,20 @@
 
 #include <stdio.h>
 #include <string.h>
-void swap(int *a, int *b)
-{
-    int temp = *a;
-    *a = *b;
-    *b = temp;
-}
+
 int main() {
 
-   int a, b;
-   scanf("%d %d",&a, &b);
-   printf("Before swap: a = %d, b = %d\n", a,b);
-   swap(&a,&b);
-   printf("After swap: a = %d, b = %d",a,b);
+   int arr[101];
+   int sum=0;
+   for(int i=0; i<10; i++){
+    scanf("%d",&arr[i]);
+   }
+   for(int i=0; i<10; i++){
+    if(arr[i]%2 != 0){
+      sum = sum + arr[i];
+    }
+   }
+   printf("%d",sum);
     return 0;
 }
 
