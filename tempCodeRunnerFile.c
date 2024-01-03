@@ -1,6 +1,3 @@
-/*//  بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ  //*/
-/*//   Md Sumon Hossain Khan   //*/
-
 #include<stdio.h>
 
 int sum(int p, int q){
@@ -17,8 +14,3 @@ int main()
 
     return 0;
 }
-
-
-
-
-
