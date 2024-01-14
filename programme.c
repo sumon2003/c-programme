@@ -1,3 +1,6 @@
+/*//  بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ  //*/
+/*//   Md Sumon Hossain Khan   //*/
+
 #include<stdio.h>
 #include<conio.h>
 #include<windows.h>
